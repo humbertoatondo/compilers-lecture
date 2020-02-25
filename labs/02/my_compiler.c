@@ -60,7 +60,11 @@ void print_array(struct Data *arr, int end);
             else
                 spaces_flag = 1;
 
+<<<<<<< HEAD
             if (l[i - 1] != '\\'  && !comments_flag && !multiline_comments_flag)
+=======
+            if (!comments_flag && !multiline_comments_flag)
+>>>>>>> a15a82d183d30a24858939a6e872cdc9beddc298
                 search_for_value(l[i], line, spaces);
         }
         lines[line] = spaces;
@@ -139,6 +143,7 @@ void check_balance()
         {
             if (cmp(received[i].char_value, received[j].char_value) && received[i].indentation == received[j].indentation)
             {
+<<<<<<< HEAD
                 if (received[i].char_value == '\"' || received[i].char_value == '\'')
                     while (i + 1 <= j - 1)
                     {
@@ -147,6 +152,8 @@ void check_balance()
                         i++;
                         j--;
                     }
+=======
+>>>>>>> a15a82d183d30a24858939a6e872cdc9beddc298
                 // Remove balanced characters.
                 received[i].char_value = 0;
                 received[j].char_value = 0;
